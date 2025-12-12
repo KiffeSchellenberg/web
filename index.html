@@ -31,10 +31,9 @@
       line-height: 1.65;
     }
 
-    /* ---------------- Header / Hero ---------------- */
+    /* ---------- HERO ---------- */
 
     header.hero {
-      position: relative;
       padding: 3rem 1.5rem 3.5rem;
       text-align: center;
     }
@@ -49,9 +48,9 @@
     .hero-image {
       width: 100%;
       height: auto;
+      display: block;
       border-radius: 6px;
       box-shadow: 0 20px 40px rgba(0,0,0,0.6);
-      display: block;
     }
 
     .logo-overlay {
@@ -82,7 +81,7 @@
       font-size: 1.05rem;
     }
 
-    /* ---------------- Layout ---------------- */
+    /* ---------- LAYOUT ---------- */
 
     main {
       max-width: var(--max-width);
@@ -104,7 +103,15 @@
       margin: 0 0 1rem;
     }
 
-    /* ---------------- Links ---------------- */
+    /* ---------- MEDIA ---------- */
+
+    .soundcloud iframe {
+      width: 100%;
+      border-radius: 6px;
+      margin-top: 1rem;
+    }
+
+    /* ---------- LINKS ---------- */
 
     .links a,
     .streaming-list a {
@@ -128,27 +135,43 @@
       margin-bottom: 0.5rem;
     }
 
-    /* ---------------- Footer ---------------- */
+    /* ---------- FOOTER ---------- */
 
     footer {
       margin-top: 5rem;
       padding: 2rem 1.5rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: var(--muted);
       border-top: 1px solid rgba(255,255,255,0.08);
     }
 
-    /* ---------------- Mobile tweaks ---------------- */
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.9rem;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    .footer-logo {
+      width: 42px;
+      height: auto;
+      opacity: 0.7;
+      filter: drop-shadow(0 4px 10px rgba(0,0,0,0.6));
+    }
+
+    .footer-text {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    /* ---------- MOBILE ---------- */
 
     @media (max-width: 480px) {
-      .site-logo {
-        width: 90px;
-      }
-
-      header h1 {
-        margin-top: 3rem;
-      }
+      .site-logo { width: 90px; }
+      .footer-logo { width: 36px; }
+      header h1 { margin-top: 3rem; }
     }
   </style>
 </head>
@@ -156,14 +179,12 @@
 <body>
 
   <header class="hero">
-
     <div class="hero-image-wrapper">
       <img
         src="images/Picture0.png"
         alt="K!FFE! & Schellenberg – Duo"
         class="hero-image"
       />
-
       <div class="logo-overlay">
         <img
           src="images/Logo.png"
@@ -220,7 +241,6 @@
 
       <div class="soundcloud">
         <iframe
-          width="100%"
           height="300"
           scrolling="no"
           frameborder="no"
@@ -231,44 +251,21 @@
 
       <p>Weitere Streaming-Plattformen:</p>
       <ul class="streaming-list">
-        <li>
-          <a href="https://soundcloud.com/kiffe-2"
-             target="_blank" rel="noopener">
-            SoundCloud
-          </a>
-        </li>
-        <li>
-          <a href="https://open.spotify.com/artist/7jaPA6bI5jdWOYnB0b03QT"
-             target="_blank" rel="noopener">
-            Spotify
-          </a>
-        </li>
-        <li>
-          <a href="https://music.apple.com/de/artist/k-ffe/1507131678"
-             target="_blank" rel="noopener">
-            Apple Music
-          </a>
-        </li>
-        <li>
-          <a href="https://music.amazon.de/artists/B086WZBGGL/k-ffe?musicTerritory=DE"
-             target="_blank" rel="noopener">
-            Amazon Music
-          </a>
-        </li>
+        <li><a href="https://soundcloud.com/kiffe-2" target="_blank" rel="noopener">SoundCloud</a></li>
+        <li><a href="https://open.spotify.com/artist/7jaPA6bI5jdWOYnB0b03QT" target="_blank" rel="noopener">Spotify</a></li>
+        <li><a href="https://music.apple.com/de/artist/k-ffe/1507131678" target="_blank" rel="noopener">Apple Music</a></li>
+        <li><a href="https://music.amazon.de/artists/B086WZBGGL/k-ffe?musicTerritory=DE" target="_blank" rel="noopener">Amazon Music</a></li>
       </ul>
     </section>
 
     <section>
       <h2>Live &amp; SofaConcerts</h2>
-
       <p>
         Wir treten als Duo live auf und fühlen uns besonders im
         SofaConcerts-Kontext wohl: persönlich, nah und aufmerksam.
       </p>
-
       <div class="links">
-        <a href="https://www.sofaconcerts.org/"
-           target="_blank" rel="noopener">
+        <a href="https://www.sofaconcerts.org/" target="_blank" rel="noopener">
           SofaConcerts.org
         </a>
       </div>
@@ -276,11 +273,6 @@
 
     <section>
       <h2>Kontakt</h2>
-
-      <p>
-        Interesse an einem Konzert oder einer Anfrage?
-      </p>
-
       <div class="links">
         <a href="mailto:kontakt@kiffe-schellenberg.de">
           kontakt@kiffe-schellenberg.de
@@ -291,7 +283,16 @@
   </main>
 
   <footer>
-    © K!FFE! &amp; Schellenberg · Musik &amp; Texte
+    <div class="footer-inner">
+      <img
+        src="images/Logo.png"
+        alt="K!FFE! & Schellenberg – Logo"
+        class="footer-logo"
+      />
+      <div class="footer-text">
+        © K!FFE! &amp; Schellenberg · Musik &amp; Texte
+      </div>
+    </div>
   </footer>
 
 </body>
