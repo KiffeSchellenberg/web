@@ -3,16 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Duo – Bayerischer Crossover</title>
 
-  <meta name="description" content="Bayerischer Crossover als Duo. Eigene Songs, Dialekt, live und nah. Hörbeispiele über SoundCloud." />
+  <title>K!FFE! & Schellenberg – Bayerischer Crossover</title>
+
+  <meta name="description"
+        content="K!FFE! & Schellenberg – Bayerischer Crossover als Duo. Eigene Songs mit Dialekt, ehrlich, emotional und live interpretiert." />
 
   <style>
     :root {
-      --bg: #f7f7f5;
-      --text: #1e1e1e;
-      --accent: #6b4f3f;
-      --muted: #666;
+      --bg: #0f0f12;
+      --text: #f1f1f1;
+      --accent: #c49a6c;
+      --muted: #a0a0a0;
       --max-width: 900px;
     }
 
@@ -22,16 +24,25 @@
 
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Helvetica, Arial, sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
-    header {
-      padding: 4rem 1.5rem 3rem;
+    header.hero {
+      padding: 3rem 1.5rem 3.5rem;
       text-align: center;
+    }
+
+    .hero-image {
+      max-width: 800px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 2rem;
+      border-radius: 6px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
     }
 
     header h1 {
@@ -63,25 +74,37 @@
       font-weight: 600;
     }
 
-    .intro {
-      font-size: 1.05rem;
+    p {
+      margin: 0 0 1rem;
     }
 
-    .soundcloud {
-      margin-top: 1.5rem;
+    .soundcloud iframe,
+    .spotify iframe {
+      width: 100%;
+      border-radius: 6px;
+      margin-top: 1rem;
     }
 
-    .links a {
-      display: inline-block;
-      margin-right: 1.5rem;
-      margin-top: 0.5rem;
+    .links a,
+    .streaming-list a {
       color: var(--accent);
       text-decoration: none;
       font-weight: 500;
     }
 
-    .links a:hover {
+    .links a:hover,
+    .streaming-list a:hover {
       text-decoration: underline;
+    }
+
+    .streaming-list {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+
+    .streaming-list li {
+      margin-bottom: 0.5rem;
     }
 
     footer {
@@ -90,29 +113,54 @@
       text-align: center;
       font-size: 0.9rem;
       color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,0.08);
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>Duo [Name einsetzen]</h1>
+  <header class="hero">
+    <img
+      src="images/Picture0.png"
+      alt="K!FFE! & Schellenberg – Duo"
+      class="hero-image"
+    />
+
+    <h1>K!FFE! &amp; Schellenberg</h1>
     <p>
-      Bayerischer Crossover. Eigene Songs mit Dialekt,
-      live interpretiert als Duo – nahbar, reduziert und ehrlich.
+      Bayerischer Crossover als Duo.<br>
+      Eigene Songs, Dialekt, live interpretiert – ehrlich und emotional.
     </p>
   </header>
 
   <main>
 
-    <section class="intro">
+    <section>
       <h2>Über uns</h2>
+
       <p>
-        Wir spielen eigene Lieder mit bayerischen Texten, stilistisch offen
-        zwischen Liedermacher, Rap, Folk und allem, was sich live gut anfühlt.
-        Unsere Musik ist fürs Zuhören gemacht – am liebsten im kleinen Rahmen,
-        im Wohnzimmer, auf der Couch oder dort, wo Menschen sich begegnen.
+        <strong>K!FFE!</strong> – was klingt wie eine fragwürdige Aufforderung,
+        ist der Name eines Musikprojekts von Gerhard Kiffe.
+        Seit rund 15 Jahren schreibt, produziert und veröffentlicht er Songs
+        mit bayerischen Texten in unterschiedlichster Stilistik:
+        Pop, Rock, Funk, Jazz, Reggae, Singer/Songwriter, Brass –
+        nichts ist vor ihm sicher.
+      </p>
+
+      <p>
+        Wie von Zauberhand hat seine Musik vor einiger Zeit begonnen,
+        sich einen Weg aus der virtuellen in die reale Welt zu bahnen.
+        Diese Entwicklung fand ihren bisherigen Höhepunkt
+        in der Gründung des Duos <strong>K!FFE! &amp; Schellenberg</strong>.
+      </p>
+
+      <p>
+        Gitarrist Lars Schellenberg bildet dabei ein musikalisches,
+        harmonisches und gesangliches Kompliment zu Kiffe.
+        Gemeinsam stehen <strong>K!FFE! &amp; Schellenberg</strong>
+        für Musik zum Zuhören und Nachdenken:
+        gnadenlos ehrlich, emotional und nahbar.
       </p>
     </section>
 
@@ -124,30 +172,60 @@
       </p>
 
       <div class="soundcloud">
-        <!-- SoundCloud Embed hier einsetzen -->
-        <!-- Beispiel:
         <iframe
-          width="100%"
-          height="166"
+          height="300"
           scrolling="no"
           frameborder="no"
           allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=DEIN_TRACK_ODER_PLAYLIST_LINK">
+          src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/kiffe-2&color=%23c49a6c&auto_play=false&show_user=true&show_comments=false&show_reposts=false">
         </iframe>
-        -->
       </div>
+
+      <p>
+        Oder direkt auf SoundCloud:
+        <a href="https://soundcloud.com/kiffe-2"
+           target="_blank" rel="noopener">
+          soundcloud.com/kiffe-2
+        </a>
+      </p>
+
+      <div class="spotify">
+        <iframe
+          src="https://open.spotify.com/embed/artist/7jaPA6bI5jdWOYnB0b03QT"
+          height="380"
+          frameborder="0"
+          allow="encrypted-media"
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <p>Weitere Streaming-Plattformen:</p>
+      <ul class="streaming-list">
+        <li>
+          <a href="https://music.apple.com/de/artist/k-ffe/1507131678"
+             target="_blank" rel="noopener">
+            Apple Music
+          </a>
+        </li>
+        <li>
+          <a href="https://music.amazon.de/artists/B086WZBGGL/k-ffe?musicTerritory=DE"
+             target="_blank" rel="noopener">
+            Amazon Music
+          </a>
+        </li>
+      </ul>
     </section>
 
     <section>
-      <h2>Live & SofaConcerts</h2>
+      <h2>Live &amp; SofaConcerts</h2>
       <p>
         Wir treten als Duo live auf und fühlen uns besonders im
-        SofaConcerts-Kontext wohl: persönlich, leise genug zum Zuhören,
-        laut genug zum Mitschwingen.
+        SofaConcerts-Kontext wohl: persönlich, nah und aufmerksam.
       </p>
 
       <div class="links">
-        <a href="https://www.sofaconcerts.org/" target="_blank" rel="noopener">
+        <a href="https://www.sofaconcerts.org/"
+           target="_blank" rel="noopener">
           SofaConcerts.org
         </a>
       </div>
@@ -156,12 +234,12 @@
     <section>
       <h2>Kontakt</h2>
       <p>
-        Bei Interesse an einem Konzert oder Fragen:
+        Interesse an einem Konzert oder einer Anfrage?
       </p>
 
       <div class="links">
-        <a href="mailto:kontakt@duo-example.de">
-          kontakt@duo-example.de
+        <a href="mailto:kontakt@kiffe-schellenberg.de">
+          kontakt@kiffe-schellenberg.de
         </a>
       </div>
     </section>
@@ -169,7 +247,7 @@
   </main>
 
   <footer>
-    © Duo [Name einsetzen] · Musik & Texte
+    © K!FFE! &amp; Schellenberg · Musik &amp; Texte
   </footer>
 
 </body>
