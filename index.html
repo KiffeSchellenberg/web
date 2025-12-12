@@ -39,9 +39,24 @@
       text-align: center;
     }
 
+    .hero-image-wrapper {
+      position: relative;
+      display: inline-block;
+      max-width: 800px;
+      width: 100%;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+      display: block;
+    }
+
     .logo-overlay {
       position: absolute;
-      top: 1.5rem;
+      bottom: -22px;
       left: 50%;
       transform: translateX(-50%);
       z-index: 2;
@@ -50,22 +65,12 @@
     .site-logo {
       width: 110px;
       height: auto;
-      opacity: 0.85;
-      filter: drop-shadow(0 6px 16px rgba(0,0,0,0.6));
-    }
-
-    .hero-image {
-      max-width: 800px;
-      width: 100%;
-      height: auto;
-      margin: 0 auto 2rem;
-      border-radius: 6px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
-      display: block;
+      opacity: 0.9;
+      filter: drop-shadow(0 6px 16px rgba(0,0,0,0.7));
     }
 
     header h1 {
-      margin: 0 0 1rem;
+      margin: 3.5rem 0 1rem;
       font-size: 2.2rem;
       font-weight: 600;
     }
@@ -97,15 +102,6 @@
 
     p {
       margin: 0 0 1rem;
-    }
-
-    /* ---------------- Media embeds ---------------- */
-
-    .soundcloud iframe,
-    .spotify iframe {
-      width: 100%;
-      border-radius: 6px;
-      margin-top: 1rem;
     }
 
     /* ---------------- Links ---------------- */
@@ -149,6 +145,10 @@
       .site-logo {
         width: 90px;
       }
+
+      header h1 {
+        margin-top: 3rem;
+      }
     }
   </style>
 </head>
@@ -157,19 +157,21 @@
 
   <header class="hero">
 
-    <div class="logo-overlay">
+    <div class="hero-image-wrapper">
       <img
-        src="images/Logo.png"
-        alt="K!FFE! & Schellenberg – Logo"
-        class="site-logo"
+        src="images/Picture0.png"
+        alt="K!FFE! & Schellenberg – Duo"
+        class="hero-image"
       />
-    </div>
 
-    <img
-      src="images/Picture0.png"
-      alt="K!FFE! & Schellenberg – Duo"
-      class="hero-image"
-    />
+      <div class="logo-overlay">
+        <img
+          src="images/Logo.png"
+          alt="K!FFE! & Schellenberg – Logo"
+          class="site-logo"
+        />
+      </div>
+    </div>
 
     <h1>K!FFE! &amp; Schellenberg</h1>
     <p>
@@ -218,6 +220,7 @@
 
       <div class="soundcloud">
         <iframe
+          width="100%"
           height="300"
           scrolling="no"
           frameborder="no"
@@ -226,26 +229,20 @@
         </iframe>
       </div>
 
-      <p>
-        Oder direkt auf SoundCloud:
-        <a href="https://soundcloud.com/kiffe-2"
-           target="_blank" rel="noopener">
-          soundcloud.com/kiffe-2
-        </a>
-      </p>
-
-      <div class="spotify">
-        <iframe
-          src="https://open.spotify.com/embed/artist/7jaPA6bI5jdWOYnB0b03QT"
-          height="380"
-          frameborder="0"
-          allow="encrypted-media"
-          loading="lazy">
-        </iframe>
-      </div>
-
       <p>Weitere Streaming-Plattformen:</p>
       <ul class="streaming-list">
+        <li>
+          <a href="https://soundcloud.com/kiffe-2"
+             target="_blank" rel="noopener">
+            SoundCloud
+          </a>
+        </li>
+        <li>
+          <a href="https://open.spotify.com/artist/7jaPA6bI5jdWOYnB0b03QT"
+             target="_blank" rel="noopener">
+            Spotify
+          </a>
+        </li>
         <li>
           <a href="https://music.apple.com/de/artist/k-ffe/1507131678"
              target="_blank" rel="noopener">
